@@ -7,7 +7,7 @@ published: true
 <div id="banners"></div>
 <div class="container">
   {% for post in site.posts %}
-  {% if post.categories contains 'news' %}
+  {% if post.categories contains 'product' %}
   <div class="blog-post">
       <h1 class="blog-title">
         <i class="fa fa-file-text"></i>
@@ -41,7 +41,7 @@ published: true
 
         {% if post.label_danger %}
           <span class="label label-danger">{{ post.label_danger }}</span>
-        {% endif %}
+          {% endif %}
       </div>         
     </div>
     <hr>

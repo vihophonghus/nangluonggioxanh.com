@@ -7,7 +7,6 @@ published: true
 <div id="banners"></div>
 <div class="container">
   {% for post in site.posts %}
-  {% if post.categories contains 'news' %}
   <div class="blog-post">
       <h1 class="blog-title">
         <i class="fa fa-file-text"></i>
@@ -45,7 +44,6 @@ published: true
       </div>         
     </div>
     <hr>
-  {% endif %}
   {% endfor %}
 </div>
 <!--End Main Container -->
